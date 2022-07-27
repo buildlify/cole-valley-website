@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: clamp(4.04rem, calc(5rem + -1.35vw), 4.74rem);
+}
+h2 {
+  font-size: clamp(3.37rem, calc(3.62rem + -0.36vw), 3.55rem);
+}
+h3 {
+  font-size: clamp(2.66rem, calc(2.61rem + 0.28vw), 2.81rem);
+}
+h4 {
+  font-size: clamp(2rem, calc(1.87rem + 0.67vw), 2.34rem);
+}
+h5 {
+  font-size: clamp(1.3rem, calc(1.87rem + 0.67vw), 1.3rem);
+}
+
+p,
+a,
+span,
+ul,
+li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-size: clamp(1.13rem, calc(0.93rem + 0.98vw), 1.63rem);
+}
+
+/* create a root stacking context (z-index) */
+#__next {
+  isolation: isolate;
+}

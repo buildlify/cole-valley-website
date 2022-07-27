@@ -1,0 +1,25 @@
+@import '../../styles/shared';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: $max-width;
+  width: 98%;
+  margin: 0 auto;
+  height: $nav-height;
+}
+
+.logo {
+  width: 200px;
+}
+
+.links {
+  a {
+    color: rgb(27, 25, 25);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 1.2em;
+  }
+}

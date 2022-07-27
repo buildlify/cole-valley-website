@@ -1,0 +1,43 @@
+@import '../../styles/shared';
+
+.container {
+  max-width: $max-width;
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 5rem;
+
+  h2 {
+    text-align: center;
+  }
+
+  // event calendar link
+  a {
+    display: block;
+    margin: 1rem 0 0 1rem;
+    color: $primary-color;
+    font-size: 1.2rem;
+  }
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.card {
+  flex: 1;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: 0.5s transform;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  img {
+    border-radius: $border-radius;
+  }
+}

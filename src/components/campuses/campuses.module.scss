@@ -1,0 +1,35 @@
+@import '../../styles/shared';
+
+.container {
+  max-width: $max-width;
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.linkContainer {
+  margin-top: 18px;
+  display: flex;
+  justify-items: baseline;
+  align-items: center;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1.1em;
+
+  &:first-child {
+    margin-right: 5px;
+  }
+}
+
+.box {
+  flex: 1;
+  min-width: 400px;
+  background-color: $primary-color;
+  border-radius: $border-radius;
+  color: #fff;
+  padding: 1rem;
+  margin: 1rem;
+}

@@ -1,0 +1,66 @@
+$max-width: 1400px;
+$nav-height: 90px;
+$border-radius: 6px;
+
+$primary-color: rgb(7, 55, 198);
+$secondary-color: rgb(148, 159, 164);
+
+@mixin PrimaryButton {
+  //   appearance: button;
+  //   backface-visibility: hidden;
+  //   touch-action: manipulation;
+  background-color: $primary-color;
+  border-radius: $border-radius;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0,
+    rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 100%;
+  height: 44px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 30px;
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  user-select: none;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #18256f;
+    transform: translateY(-2px);
+  }
+  &:active {
+    background-color: #18256f;
+    transform: translateY(0px);
+  }
+}
+
+@mixin SecondaryButton {
+  //   appearance: button;
+  //   backface-visibility: hidden;
+  //   touch-action: manipulation;
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: $border-radius;
+  color: #fff;
+  cursor: pointer;
+  font-size: 100%;
+  height: 44px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 30px;
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  user-select: none;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 800;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-2px);
+  }
+  &:active {
+    transform: translateY(0px);
+  }
+}

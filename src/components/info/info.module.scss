@@ -1,0 +1,47 @@
+@import '../../styles/shared';
+
+.container {
+  max-width: $max-width;
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  flex: 1;
+  background-color: $primary-color;
+  border-radius: $border-radius;
+  padding: 1rem;
+  margin: 0 0.5rem;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.row {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    flex: 1;
+    width: 300px;
+  }
+
+  h3 {
+    text-decoration: underline;
+    text-decoration-color: $primary-color;
+  }
+}
+
+.text {
+  flex: 1;
+  padding: 0 1rem;
+}

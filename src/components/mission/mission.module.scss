@@ -1,0 +1,31 @@
+@import '../../styles/shared';
+
+.container {
+  max-width: $max-width;
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  text-align: center;
+  border-top: 1px solid $secondary-color;
+  border-bottom: 1px solid $secondary-color;
+  padding: 1rem 0;
+  span {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -2px;
+      width: 120px;
+      height: 8px;
+      transform: skew(-12deg) translateX(-50%);
+      background: $secondary-color;
+      z-index: -1;
+    }
+  }
+}
+.button {
+  @include PrimaryButton;
+  margin-top: 10px;
+}
